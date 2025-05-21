@@ -1,0 +1,43 @@
+/* Ensure all cards have the same height and width */
+.amenity-card {
+  height: 150px; /* Fixed height */
+  width: 80%; /* Full width of the column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Light background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for cards */
+.amenity-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(124, 78, 78, 0.2); /* Shadow effect */
+}
+
+/* Icon animation */
+.animated-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Scale up the icon on hover */
+.animated-icon:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon */
+  color: #007bff; /* Change the color on hover */
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+  .amenity-card {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .amenity-card {
+    height: 160px; /* Adjust height for extra small screens */
+  }
+}

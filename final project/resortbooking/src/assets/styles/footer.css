@@ -1,0 +1,63 @@
+.main-heading {
+  color: gray;
+  min-height: 400px;
+  text-align: center;
+}
+
+.box {
+  background-color: black;
+  padding: 3%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+.column {
+  display: flex;
+  margin-left: 30px;
+  flex-direction: column;
+  width: 200px;
+}
+
+@media (max-width: 800px) {
+  .column {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.link {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.link:hover {
+  color: green;
+}
+
+.heading {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.resort{
+  color: rgb(155, 67, 236);
+}
